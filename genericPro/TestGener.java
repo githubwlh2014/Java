@@ -13,25 +13,30 @@ public class TestGener {
 //		System.out.println(li.get(0));
 //		System.out.println(li.get(1));
 //		
-		Pair<String> pair=new Pair<String>();
-		System.out.println("first="+pair.getFirst());
-		System.out.println("second="+pair.getSecond());
-		
-//		pair.setFirst("Hello");
-//		pair.setSecond("World");
-		Pair<String> pair1=new Pair<String>("Hello","World");
-		System.out.println("first="+pair1.getFirst());
-		System.out.println("second="+pair1.getSecond());
-		
-		Integer aa=ArrayAlg.aver(10, 15);
-		System.out.println(aa.intValue());
-		
-		TestPair tp=new TestPair(new Date(),new Date());
-		tp.setSecond(new Date());
+//		Pair<String> pair=new Pair<String>();
+//		System.out.println("first="+pair.getFirst());
+//		System.out.println("second="+pair.getSecond());
+//		
+////		pair.setFirst("Hello");
+////		pair.setSecond("World");
+//		Pair<String> pair1=new Pair<String>("Hello","World");
+//		System.out.println("first="+pair1.getFirst());
+//		System.out.println("second="+pair1.getSecond());
+//		
+//		Integer aa=ArrayAlg.aver(10, 15);
+//		System.out.println(aa.intValue());
+//		
+//		TestPair tp=new TestPair(new Date(),new Date());
+//		tp.setSecond(new Date());
 		
 		//Object[] table=new Pair<String>[10];
+		Class<?> cl=Pair.class;
+		System.out.println(cl);
+		
+		
 		
 	}
+
 
 }
 

@@ -1,6 +1,7 @@
 package reflect;
 import java.lang.reflect.Field;
 import java.util.*;
+//import java.lang.Class;
 
 public class TestReflect {
 

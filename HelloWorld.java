@@ -2,7 +2,7 @@ import java.net.URI;
 import java.util.*;
 class Test{
 	
-	private int m;
+	public int m;
 	private int n;
 	
 	public Test(int m,int n){
@@ -42,8 +42,9 @@ class TestSon extends Test{
 	
 	public void output(){
 		
-		super.output();
+//		super.output();
 		System.out.println("a="+a+"b="+b);
+//		System.out.println(super.m);
 	}
 	
 	public void out(){
@@ -62,18 +63,18 @@ public class HelloWorld implements test3{
 	
 	public static void main(String[] args) throws Exception{
 		
-		Test test=new TestSon(1,2,3,4);
-		TestSon test1=(TestSon)test;
-		
-		test1.out();
+		TestSon test=new TestSon(100,2,3,4);
+//		TestSon test1=(TestSon)test;
+////		System.out.println(test1.a);
+		test.output();
 		
 //		String INPUT_PATH = "hdfs://hadoop:9000/input";
 //		URI uri=new URI(INPUT_PATH);
 //		String scheme = uri.getScheme();
 //	    String authority = uri.getAuthority();
 //	    System.out.println("scheme="+ scheme + ",authority=" +authority);
-		
-	
+//		m=12;
+		System.out.println(m);
 	}
 
 	@Override
@@ -98,6 +99,7 @@ public class HelloWorld implements test3{
 
 interface test1{
 	
+	public static int m=45;
 	void fu();
 }
 
@@ -109,4 +111,7 @@ interface test2{
 interface test3 extends test1,test2{
 	
 	void fu2();
+}
+class tt  extends HelloWorld implements test3{
+	
 }
