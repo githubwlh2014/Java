@@ -3,6 +3,7 @@ package TestSet;
  * 经测试不会实现内部类的重写“多态”
  * @author WLH
  *
+ *
  */
 public class TestMethod {
 
