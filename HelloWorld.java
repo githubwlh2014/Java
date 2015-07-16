@@ -8,7 +8,7 @@ class Test{
 	public Test(int m,int n){
 		
 		this.m=m;
-		this.n=n;
+		this.n=n; //value=value;
 	}
 	
 	public Test(){
