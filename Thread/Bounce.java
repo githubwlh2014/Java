@@ -14,8 +14,12 @@ public class Bounce {
 				JFrame frame=new BounceFrame();
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				frame.setVisible(true);
+				
 			}
 		});
+		
+		System.out.print("½áÊø");
+		System.out.print("½áÊø");
 	}
 
 }
