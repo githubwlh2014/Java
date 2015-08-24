@@ -59,47 +59,26 @@ class TestSon extends Test{
 	}
 }
 
-public class HelloWorld implements test3{
+public class HelloWorld{
 	
 	public static void main(String[] args) throws Exception{
 		
-		TestSon test=new TestSon(100,2,3,4);
-//		TestSon test1=(TestSon)test;
-////		System.out.println(test1.a);
-		test.output();
+		List<Integer> l=new LinkedList<>();
+		l.add(3);
+		l.add(1);
+		l.add(2);
+		Iterator i=l.iterator();
+		Iterator i1=l.iterator();
+//		l.add(5);
+//		i1.next();
+//		i1.remove();
+		i1.next();
+		i1.next();
+		while(i.hasNext())
+		System.out.println(i.next());
 		
-//		String INPUT_PATH = "hdfs://hadoop:9000/input";
-//		URI uri=new URI(INPUT_PATH);
-//		String scheme = uri.getScheme();
-//	    String authority = uri.getAuthority();
-//	    System.out.println("scheme="+ scheme + ",authority=" +authority);
-//		m=12;
-		System.out.println(m);
-	}
-
-	@Override
-	public void fu() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-
-public class HelloWorld {
-
-	int a;
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		HelloWorld HW=new HelloWorld();
-		System.out.println(HW.a);
-		String m="World";
-		switch(m){
-		
-		case "Hello":
-			System.out.println("Test");
-			//break;
-		case "World":
-			System.out.println("World");
-		}
 	}
 
 }
+	
+
